@@ -1,8 +1,10 @@
 /**
- * Created by SHERRI on 3/12/15.
+ * Created by SHERRI on 3/15/15.
  */
+
 // grab the packages that we need for the user model
 //creating a schema defining name, username, password
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt-nodejs');

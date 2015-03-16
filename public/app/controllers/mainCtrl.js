@@ -6,7 +6,6 @@
 //gets user data to display hello sherri Auth.getUser() function
 //which hits api endpoint localhost:8080/api/me
 
-
 angular.module ('mainCtrl', [])
 .controller('mainController', function($rootScope, $location, Auth){
 

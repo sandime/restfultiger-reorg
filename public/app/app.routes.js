@@ -14,6 +14,7 @@ angular.module('app.routes', ['ngRoute'])
             controller: 'mainController',
             //controllerAs accesses mainController's functions using login.doLogin()
             controllerAs: 'login'
+
         });
     //get rid of the hash in the url
     $locationProvider.html5Mode(true);

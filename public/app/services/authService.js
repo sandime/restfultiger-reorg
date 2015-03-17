@@ -1,3 +1,4 @@
+
 angular.module('authService', [])
 
 // ===================================================
@@ -36,8 +37,8 @@ angular.module('authService', [])
         authFactory.isLoggedIn = function() {
             if (AuthToken.getToken())
                 return true;
-            else
-                return false;
+           // else
+             //   return false;
         };
 
         // get the logged in user
@@ -116,3 +117,4 @@ angular.module('authService', [])
         return interceptorFactory;
 
     });
+

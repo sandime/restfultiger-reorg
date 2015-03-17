@@ -2,6 +2,7 @@
  * Created by SHERRI on 3/15/15.
  */
 //requiring config and config.secret
+var bodyParser = require('body-parser');
 var User       = require('../models/user');
 var jwt        = require('jsonwebtoken');
 var config     = require('../../config');
@@ -10,6 +11,7 @@ var superSecret = config.secret;
 //module.exports for passing js files back and forth
 
 module.exports = function(app, express) {
+
     var apiRouter = express.Router();
     // route to authenticate a user (POST http://localhost:8080/api/authenticate)
     apiRouter.post('/authenticate', function(req, res) {
@@ -50,6 +52,8 @@ module.exports = function(app, express) {
             }
         });
     });
+
+    /*
 // route middleware to verify a token
     apiRouter.use(function(req, res, next) {
 // do logging
@@ -79,6 +83,9 @@ module.exports = function(app, express) {
         }
 
     });
+
+
+    */
     // test route to make sure everything is working
 // accessed at GET http://localhost:8080/api
     apiRouter.get('/', function(req, res) {

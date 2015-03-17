@@ -1,3 +1,3 @@
 # restfultiger
-what i learned from the best book ever - Mean Machine
+what i learned from Mean Machine
 making a restful app
